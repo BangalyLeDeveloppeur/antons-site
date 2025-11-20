@@ -1,14 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../Asset/image/logo-Anton.jpg"
 
 const Navigation = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        {/* Logo */}
-        <NavLink className="navbar-brand" to="/">
-          Anton
+  return ( 
+    <div>
+
+        <div className="logoanton">
+
+        <NavLink className="navbar-brand logo" to="/">
+          <img src={logo} alt="logo anton" />
         </NavLink>
+        </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
+        {/* Logo */}
 
 
         {/* Bouton mobile */}
@@ -17,21 +23,21 @@ const Navigation = () => {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-        >
+          >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto navbar-menu">
 
             <li className="nav-item">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  "nav-link" + (isActive ? " active fw-bold" : "")
-                }
-              >
+                    "nav-link" + (isActive ? " active fw-bold" : "")
+            }
+            >
                 Antons Art
               </NavLink>
             </li>
@@ -40,9 +46,9 @@ const Navigation = () => {
               <NavLink
                 to="/Apropos"
                 className={({ isActive }) =>
-                  "nav-link" + (isActive ? " active fw-bold" : "")
-                }
-              >
+                    "nav-link" + (isActive ? " active fw-bold" : "")
+            }
+            >
                 Antons social
               </NavLink>
             </li>
@@ -53,9 +59,9 @@ const Navigation = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  "nav-link" + (isActive ? " active fw-bold" : "")
-                }
-              >
+                    "nav-link" + (isActive ? " active fw-bold" : "")
+            }
+            >
                 Contact Anton
               </NavLink>
             </li>
@@ -64,6 +70,7 @@ const Navigation = () => {
         </div>
       </div>
     </nav>
+                  </div>
   );
 };
 

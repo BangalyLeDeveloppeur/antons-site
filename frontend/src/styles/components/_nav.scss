@@ -1,0 +1,24 @@
+.logoanton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  img {
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.ms-auto {
+  //margin-left: auto;
+  padding-right: 450px;
+  gap: 50px;
+ li :hover {
+    font-weight: bold;
+    background: #BA1405;
+
+  }
+}
