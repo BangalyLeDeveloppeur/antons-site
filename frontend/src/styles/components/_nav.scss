@@ -14,12 +14,17 @@
 
 .ms-auto {
   //margin-left: auto;
-  padding-right: 450px;
+  padding-right: 300px;
   gap: 50px;
  li :hover {
     font-weight: bold;
     color: white;
     background: #BA1405;
+
+  }
+  li {
+    font-weight: bold;
+    font-size: 1.3em;
 
   }
 }

@@ -36,34 +36,58 @@ function AddVideo() {
   };
 
   return (
-    <div>
-      <h2>Ajouter une vidéo</h2>
+    <div className="container mt-4">
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <div className="card">
+            <div className="card-header bg-primary text-white">
+              <h2 className="h4 mb-0">Ajouter une vidéo</h2>
+            </div>
+            <div className="card-body">
+              <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    placeholder="Titre"
+                    className="form-control"
+                    value={titre}
+                    onChange={(e) => setTitre(e.target.value)}
+                    required
+                  />
+                </div>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Titre"
-          value={titre}
-          onChange={(e) => setTitre(e.target.value)}
-          required
-        />
+                <div className="mb-3">
+                  <textarea
+                    placeholder="Description"
+                    className="form-control"
+                    rows="4"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    required
+                  />
+                </div>
 
-        <textarea
-          placeholder="Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-        />
+                <div className="mb-3">
+                  <input
+                    type="file"
+                    className="form-control"
+                    accept="video/*"
+                    onChange={(e) => setVideo(e.target.files[0])}
+                    required
+                  />
+                  <div className="form-text">
+                    Formats acceptés: MP4, AVI, MOV, etc.
+                  </div>
+                </div>
 
-        <input
-          type="file"
-          accept="video/*"
-          onChange={(e) => setVideo(e.target.files[0])}
-          required
-        />
-
-        <button type="submit">Uploader</button>
-      </form>
+                <button type="submit" className="btn btn-primary w-100">
+                  Uploader
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

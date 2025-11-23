@@ -21,15 +21,12 @@ function Video() {
 
   return (
     <div>
-     
-
       {error && <p>{error}</p>}
       {videos.length === 0 && <p>Aucune vidéo disponible</p>}
 
       {videos.map((video) => (
         <div key={video.id}>
           <h3>{video.titre}</h3>
-          <p>{video.description}</p>
 
           <video
             autoPlay

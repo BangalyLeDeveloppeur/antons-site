@@ -2,7 +2,7 @@ import express from "express";
 import multer from "multer";
 import path from "path";
 import { fileURLToPath } from "url";
-import { uploadvideo, fetchVideo } from "../conroller/acceuilvideoControle.js";
+import { uploadvideo, fetchVideo } from "../controller/acceuilvideoControle.js";
 // import { verifyToken } from "../middLeware/AuthMiddlewere.js";
 
 const __filename = fileURLToPath(import.meta.url);
