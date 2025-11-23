@@ -13,18 +13,29 @@
 }
 
 .ms-auto {
-  //margin-left: auto;
   padding-right: 300px;
   gap: 50px;
- li :hover {
+
+  li :hover {
     font-weight: bold;
     color: white;
-    background: #BA1405;
-
+    background: #ba1405;
   }
   li {
     font-weight: bold;
+    color: black;
     font-size: 1.3em;
-
   }
+}
+.btnit {
+  position: absolute;
+  height: 70px;
+  width: 280px;
+  top: 690px;
+  left: 50%;
+  border: none;
+  transform: translateX(-50%);
+  background-color: #ba1405;
+  color: white;
+  padding: 10px 20px;
 }

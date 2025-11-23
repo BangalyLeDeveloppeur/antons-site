@@ -3,9 +3,23 @@
   height: 500px;
   width: 100%;
 }
-video{
-    width: 100%;
-    height:2%;
+
+video {
+  width: 100%;
+  height: 100%; 
   margin: 0;
   padding: 0;
+}
+  .video-contenaire{
+    margin-top: 60px;
+
+  }
+
+.titre-anton {
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%); 
+  font-weight: bold;
+  margin-top: 5%;
 }

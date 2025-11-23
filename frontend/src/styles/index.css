@@ -17,11 +17,57 @@
 }
 
 .ms-auto {
-  padding-right: 450px;
+  padding-right: 300px;
   gap: 50px;
 }
 .ms-auto li :hover {
   font-weight: bold;
   color: white;
-  background: #BA1405;
+  background: #ba1405;
+}
+.ms-auto li {
+  font-weight: bold;
+  color: black;
+  font-size: 1.3em;
+}
+
+.btnit {
+  position: absolute;
+  height: 70px;
+  width: 280px;
+  top: 690px;
+  left: 50%;
+  border: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ba1405;
+  color: white;
+  padding: 10px 20px;
+}
+
+.video {
+  display: block;
+  height: 500px;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.video-contenaire {
+  margin-top: 60px;
+}
+
+.titre-anton {
+  position: absolute;
+  color: white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: bold;
+  margin-top: 5%;
 }/*# sourceMappingURL=index.css.map */

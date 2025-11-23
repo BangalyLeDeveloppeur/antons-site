@@ -20,13 +20,13 @@ function Video() {
   }, []);
 
   return (
-    <div>
+    <div className="video-contenaire">
       {error && <p>{error}</p>}
       {videos.length === 0 && <p>Aucune vidéo disponible</p>}
 
       {videos.map((video) => (
         <div key={video.id}>
-          <h3>{video.titre}</h3>
+          <h1 className="titre-anton">{video.titre}</h1>
 
           <video
             autoPlay
@@ -39,6 +39,7 @@ function Video() {
           </video>
         </div>
       ))}
+     <button className="btn btn-primary btnit ">INSTAGRAM</button>
     </div>
   );
 }
